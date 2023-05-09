@@ -50,12 +50,10 @@ public class PostEsDaoTest {
     @Test
     void testAdd() {
         PostEsDTO postEsDTO = new PostEsDTO();
-        postEsDTO.setId(1L);
-        postEsDTO.setTitle("test");
-        postEsDTO.setContent("test");
-        postEsDTO.setTags(Arrays.asList("java", "python"));
-        postEsDTO.setThumbNum(1);
-        postEsDTO.setFavourNum(1);
+        postEsDTO.setId(2L);
+        postEsDTO.setTitle("哈哈啊哈哈哈");
+        postEsDTO.setContent("大姐大姐阿飞我的网站https://sklit8.top");
+        postEsDTO.setTags(Arrays.asList("go", "c++"));
         postEsDTO.setUserId(1L);
         postEsDTO.setCreateTime(new Date());
         postEsDTO.setUpdateTime(new Date());
