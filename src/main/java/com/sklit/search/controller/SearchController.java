@@ -32,7 +32,7 @@ public class SearchController {
 
     @PostMapping("/all")
     public BaseResponse<SearchVO> searchAll(@RequestBody SearchRequest searchRequest, HttpServletRequest request) {
-        return ResultUtils.success(searchFacade.searchAll(searchRequest, request));
+        return ResultUtils.success(searchFacade.searchAll(searchRequest));
     }
 
 }

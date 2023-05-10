@@ -39,7 +39,7 @@ public class SearchFacade {
     @Resource
     private DataSourceRegistry dataSourceRegistry;
 
-    public SearchVO searchAll(@RequestBody SearchRequest searchRequest, HttpServletRequest request) {
+    public SearchVO searchAll(@RequestBody SearchRequest searchRequest) {
         String type = searchRequest.getType();
         SearchTypeEnum searchTypeEnum = SearchTypeEnum.getEnumByValue(type);
         ThrowUtils.throwIf(StringUtils.isBlank(type), ErrorCode.PARAMS_ERROR);
